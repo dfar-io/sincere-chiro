@@ -1,0 +1,25 @@
+<div class="row" id="hours-section">
+  <a class="anchor" id="hours"></a>
+  <div id="hours-location" class="col-sm-12 col-md-5">
+    <div class="col-sm-6 col-md-12">
+      <h3>{{ hoursTitle }}</h3>
+      <hr />
+      <div *ngFor="let hour of hours" class="row">
+        <div class="col-4 hour-day">{{ hour.day }}</div>
+        <div class="col-8 hour-hour">{{ hour.hours }}</div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-12">
+      <h3>{{ locationTitle }}</h3>
+      <hr />
+      <p class="address">{{ address }}</p>
+      <p class="description">{{ addressDesc }}</p>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-7 agm-map-col">
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
+  </div>
+</div>

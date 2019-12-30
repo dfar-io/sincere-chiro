@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "CenturyGothic";
+  src: url("../assets/fonts/CenturyGothic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url("../assets/fonts/WorkSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url("../assets/fonts/WorkSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+#overlay-content {
+  visibility: hidden;
+}

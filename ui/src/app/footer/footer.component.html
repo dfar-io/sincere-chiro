@@ -1,0 +1,21 @@
+<div class="row" id="footer">
+  <div class="col">
+    <div class="row">
+      <div id="footer_social" class="col hidden-md hidden-lg">
+        <a
+          *ngFor="let socialMediaLink of socialMediaLinks"
+          target="_blank"
+          [href]="socialMediaLink.link"
+        >
+          <img [src]="socialMediaLink.imageUrl" [alt]="socialMediaLink.alt" />
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <hr class="col hidden-md hidden-lg" />
+    </div>
+    <div class="row">
+      <p class="col">{{ copyrightText }}</p>
+    </div>
+  </div>
+</div>

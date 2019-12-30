@@ -1,0 +1,56 @@
+<div class="row" id="conditions-section">
+  <a class="anchor" id="conditions"></a>
+  <h2>{{conditionsTitle}}</h2>
+  <div class="content-row">
+    <div class="col-sm-7 vcenter" id="conditions-content">
+      <p>{{conditionsText}}</p>
+      <h3>Conditions:</h3>
+      <ul>
+        <li *ngFor="let condition of conditions">
+          {{ condition }}
+        </li>
+      </ul>
+    </div><!--
+    --><img class="col-sm-5 vcenter" src="./assets/conditions pic.png" />
+  </div>
+</div>
+<div class="row" id="services-section">
+  <a class="anchor" id="services"></a>
+  <h2>{{servicesTitle}}</h2>
+  <div class="content-row">
+    <div class="col-sm-7 col-sm-push-5 vcenter" id="services-content">
+      <ul>
+        <li *ngFor="let service of services">
+          {{ service }}
+        </li>
+      </ul>
+      <h3>Techniques Utilized:</h3>
+      <ul>
+        <li *ngFor="let technique of techniques">
+          {{ technique }}
+        </li>
+      </ul>
+    </div><!-- this comment is needed for vertical align
+    --><img class="col-sm-5 col-sm-pull-7 vcenter" src="./assets/services pic.png" />
+  </div>
+</div>
+<div class="row" id="insurances-section">
+  <a class="anchor" id="insurances"></a>
+  <h2>{{insurancesTitle}}</h2>
+  <div class="content-row">
+    <div class="col-sm-7 vcenter" id="insurances-content">
+      <h3>We accept the following:</h3>
+      <ul>
+        <li *ngFor="let insurance of insurances">
+          {{ insurance }}
+        </li>
+      </ul>
+      <h3>No insurance? No problem</h3>
+      <p>{{insuranceText}}</p>
+    </div><!-- this comment is needed for vertical align
+    --><img class="col-sm-5 vcenter" src="./assets/insurance pic.png" />
+  </div>
+</div>
+<div class="row">
+  <img class="col-sm-offset-1 col-sm-10 hidden-xs" id="healthcare-icons" src="./assets/healthcare logos.png" />
+</div>

@@ -1,0 +1,93 @@
+div#hours-section {
+  background-color: #666766;
+}
+
+div#hours-location {
+  background-color: #666766;
+  padding: 20px 0;
+}
+
+agm-map {
+  height: 470px; /* should match div#hours-locations for md screens */
+}
+
+.agm-map-col {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+h3 {
+  color: #969595;
+  font-family: "CenturyGothic";
+  text-transform: uppercase;
+  font-size: 30pt;
+}
+
+hr {
+  border-color: #43b667;
+  width: 30px;
+  text-align: left;
+  margin-left: 0;
+}
+
+.hour-day,
+.hour-hour,
+.address,
+.description {
+  font-family: "WorkSans";
+}
+
+.hour-day {
+  color: #ffffff;
+  text-align: left;
+  width: 105px;
+}
+
+.hour-hour {
+  color: #bef26b;
+}
+
+@media (max-width: 767px) {
+  .hour-day {
+    width: 105px;
+    /* remaining dl-horizontal attributes */
+    float: left;
+    overflow: hidden;
+    clear: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.address {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.description {
+  color: #bebebe;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  div#hours-location {
+    height: 290px;
+  }
+}
+
+@media (min-width: 992px) {
+  div#hours-location {
+    height: 470px;
+  }
+
+  agm-map >>> .agm-map-container-inner {
+    border-radius: 100px 0 0 100px / 50% 0 0 50%;
+    box-shadow: 0px 0px 80px #333;
+  }
+}

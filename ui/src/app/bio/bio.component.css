@@ -1,0 +1,109 @@
+div#bio-section {
+  background-color: #666766;
+  border-top: 30px solid #43b667;
+  box-shadow: 0px 0px 60px #888;
+}
+
+h2 {
+  text-align: center;
+  color: #bef26b;
+  font-family: "CenturyGothic";
+  position: relative;
+  top: -75px;
+  font-size: 28px;
+}
+
+img {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: -75px;
+  max-width: 382px;
+}
+
+div#bio-text {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  color: #fff;
+  font-family: "WorkSans";
+}
+
+.read-more {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  position: relative;
+  top: -80px;
+  font-family: "WorkSans";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 10pt;
+  color: #b0afaf;
+  background-color: transparent;
+  box-shadow: 0;
+  outline: none;
+}
+
+[data-toggle="collapse"].collapsed .if-not-collapsed {
+  display: none;
+}
+[data-toggle="collapse"]:not(.collapsed) .if-collapsed {
+  display: none;
+}
+
+.btn:active {
+  box-shadow: none;
+  outline: none;
+}
+
+.fa {
+  color: #bef26b;
+  font-size: 24px;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: hidden;
+}
+
+div#sm-bio-text {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+div#sm-bio-text p {
+  color: #fff;
+  font-family: "WorkSans";
+}
+
+.doctor-name {
+  color: #bef26b;
+  font-family: "CenturyGothic";
+  font-size: 36px;
+}
+
+.col-md-4,
+.col-md-8 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+@media (min-width: 992px) {
+  div#bio-section {
+    padding: 40px 0;
+    border-top: 8px solid #43b667;
+  }
+
+  div#sm-bio-text {
+    top: 0;
+  }
+
+  .anchor {
+    top: -140px;
+  }
+}

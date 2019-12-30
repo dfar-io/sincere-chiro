@@ -1,0 +1,137 @@
+h2 {
+  background-color: #0a2c3a;
+  margin: 0;
+  padding: 50px 10px 0 10px;
+  text-transform: uppercase;
+  font-family: "CenturyGothic";
+  font-size: 30pt;
+  color: #314650;
+  width: 100%;
+}
+
+h3 {
+  color: #555555;
+  text-transform: uppercase;
+  font-family: "CenturyGothic";
+}
+
+div#conditions-content,
+div#services-content,
+div#insurances-content {
+  background-color: transparent;
+  padding: 30px;
+  color: #fff;
+  font-family: "WorkSans";
+  text-align: center;
+}
+
+.content-row {
+  box-shadow: 0px -10px 10px #222;
+  background-color: #43b667;
+  background-image: url("/assets/faded burst copy 2.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+p {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    letter-spacing: 10px;
+  }
+
+  ul li {
+    display: inline;
+    list-style-type: circle;
+  }
+
+  ul li:after {
+    content: "\2022";
+  }
+
+  ul li:last-child:after {
+    content: "";
+  }
+
+  div#insurances {
+    box-shadow: 0px 0px 60px #888;
+  }
+
+  .content-row {
+    background-image: url("/assets/faded burst copy 2.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+
+  div#services .content-row {
+    background-position: right bottom;
+    background-image: url("/assets/faded burst copy.png");
+  }
+
+  img#healthcare-icons {
+    margin-top: 40px;
+    box-shadow: none;
+  }
+
+  .vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+  }
+
+  div#conditions-content,
+  div#services-content,
+  div#insurances-content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  h2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .content-row {
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 40px #222;
+  }
+
+  div#insurances {
+    box-shadow: none;
+  }
+
+  #conditions.anchor,
+  #services.anchor,
+  #insurances.anchor {
+    display: block;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
+  }
+}

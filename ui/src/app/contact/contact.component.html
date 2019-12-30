@@ -1,0 +1,56 @@
+<form #form="ngForm" (ngSubmit)="submitForm(form)" class="row"
+      id="contact-section" novalidate>
+  <a id="contact" class="anchor"></a>
+  <h2>Contact</h2>
+
+  <div class="form-group col-sm-6">
+    <input type="text" class="form-control" id="name" aria-describedby="name"
+           placeholder="Your Name (required)" [(ngModel)]="model.name"
+           name="name" required>
+  </div>
+  <div class="form-group col-sm-6">
+    <input type="text" class="form-control" id="reason"
+           placeholder="Reason for Contacting" [(ngModel)]="model.reason"
+           name="reason">
+  </div>
+  <div class="form-group col-sm-6">
+    <input type="email" class="form-control" id="emailAddress"
+           placeholder="Email Address (required)"
+           [(ngModel)]="model.emailAddress" name="emailAddress" required>
+  </div>
+  <div class="form-group col-sm-6">
+    <input type="tel" class="form-control" id="phoneNumber"
+           placeholder="Phone Number" [(ngModel)]="model.phoneNumber"
+           name="phoneNumber">
+  </div>
+  <div class="form-group col-sm-12">
+    <label for="message">Message</label>
+    <textarea class="form-control" id="message" rows="4"
+              [(ngModel)]="model.message" name="message">
+    </textarea>
+  </div>
+  <div class="form-group col-sm-12">
+    <button type="submit" class="btn btn-primary" [disabled]="form.invalid">
+      Send
+    </button>
+  </div>
+</form>
+<div class="row patient-forms">
+    <div class="col-xs-12">
+      <p>You can also download and fill out patient forms early
+         and save time:</p>
+      <div class="row">
+        <div *ngFor='let form of forms' class="col-xs-12 col-sm-6">
+          <a href="/assets/forms/{{form.fileUrl}}" target="_blank">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              
+                {{ form.name }}
+              
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+</div>

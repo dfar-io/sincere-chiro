@@ -1,0 +1,31 @@
+#footer {
+  background-color: #0a2c3a;
+  color: #9dabb0;
+  font-family: "WorkSans";
+  padding: 25px 40px;
+  font-size: 11pt;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+hr {
+  border-color: #43b667;
+  width: 50px;
+}
+
+#footer_social img {
+  padding: 0px 13px;
+}
+
+#footer_social a:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  p {
+    text-align: left;
+  }
+}
