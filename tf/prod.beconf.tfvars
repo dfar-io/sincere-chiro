@@ -1,0 +1,5 @@
+resource_group_name  = "terraform-ue-rg"
+storage_account_name = "terraformdfar"
+container_name       = "terraform"
+key                  = "terraformstate-sincerechiro-prod"
+access_key           = "FEmura1yGCtXojHQehBXCEmbSVDUDVo4X+6wZ6MqonZ9BwHIjk/uBogNKIKm+mEf4Lh/3K3+PSAlpDMvywcfzA=="
