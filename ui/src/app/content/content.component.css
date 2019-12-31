@@ -92,7 +92,7 @@ p {
   }
 
   img#healthcare-icons {
-    margin-top: 40px;
+    margin: 40px auto 0 auto;
     box-shadow: none;
   }
 

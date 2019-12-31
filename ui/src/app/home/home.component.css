@@ -4,25 +4,19 @@ div#home {
 }
 
 img {
-  width: 70%;
+  width: auto;
   display: block;
   margin: 15vh auto 0 auto;
-  max-width: 220px;
+  max-height: 50vh;
 }
 
 div#overlay {
   display: none;
 }
 
-@media (min-width: 768px) {
-  img {
-    max-width: 340px;
-  }
-}
-
 @media (min-width: 992px) {
   img {
-    max-width: 480px;
+    max-height: 70vh;
   }
 
   div#home {

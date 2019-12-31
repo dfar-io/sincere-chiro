@@ -5,7 +5,7 @@
     </a>
     <button
       type="button"
-      class="navbar-toggle collapsed"
+      class="navbar-toggle collapsed d-lg-none"
       data-toggle="modal"
       data-target="#nav-modal"
       aria-expanded="false"
@@ -13,22 +13,12 @@
     >
       <i class="fas fa-bars" style="color: #b0afaf"></i>
     </button>
-    <a class="tablet-phone" href="tel:{{ phoneNumber }}">{{ phoneNumber }}</a>
-  </div>
-
-  <div id="navbar" class="navbar-collapse collapse">
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav d-none d-lg-inline">
       <li class="nav-item" *ngFor="let link of links">
         <a class="nav-link" [href]="link.link">{{ link.title }}</a>
       </li>
     </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="nav-item">
-        <a class="nav-link phone" href="tel:{{ phoneNumber }}">{{
-          phoneNumber
-        }}</a>
-      </li>
-    </ul>
+    <a class="tablet-phone" href="tel:{{ phoneNumber }}">{{ phoneNumber }}</a>
   </div>
 </nav>
 <div
