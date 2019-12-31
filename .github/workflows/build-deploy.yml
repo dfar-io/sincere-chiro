@@ -1,0 +1,38 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Build API
+        run: dotnet build --configuration Release
+        working-directory: ./api
+      - name: Build UI
+        run: |
+          npm ci
+          npm run build -- --prod
+        working-directory: ./ui
+      - name: 'Login via Azure CLI'
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - name: Deploy API
+        uses: Azure/functions-action@v1
+        id: fa
+        with:
+          app-name: sincerechiro-prod-fa
+          package: './api/bin/Release/netcoreapp2.1'
+      - name: Deploy UI
+        run: az storage blob upload-batch -d '$web'
+          --account-name sincerechiroprodsa
+          -s ./ui/dist/sincere-chiro-ui
+      - name: Purge CDN
+        run: az cdn endpoint purge -g sincerechiro-prod-rg
+          --profile-name sincerechiro-prod-cdn
+          --name sincerechiro-prod-cdnEndpoint --content-paths /
