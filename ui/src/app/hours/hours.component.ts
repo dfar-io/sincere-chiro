@@ -12,8 +12,8 @@ export class HoursComponent implements OnInit {
   zoom = 16;
   hoursTitle = 'Hours';
   locationTitle = 'Location';
-  address = '115 S Main St, Rochester, MI 48307';
-  addressDesc = 'Inside McCauley Chiropractic';
+  address = '115 E. 3rd Street';
+  addressDesc = '';
   hours: any[] = [
     { day: 'Monday', hours: 'By appointment only' },
     { day: 'Tuesday', hours: '9am-1pm & 3pm-6pm' },
