@@ -7,17 +7,17 @@ import * as $ from 'jquery';
   styleUrls: ['./hours.component.css']
 })
 export class HoursComponent implements OnInit {
-  lat = 42.677632;
-  lng = -83.134134;
+  lat = 42.4881321;
+  lng = -83.1440455;
   zoom = 16;
   hoursTitle = 'Hours';
   locationTitle = 'Location';
   address = '115 E. 3rd Street';
   addressDesc = '';
   hours: any[] = [
-    { day: 'Monday', hours: 'By appointment only' },
+    { day: 'Monday', hours: '10am-12pm & 2pm-4pm' },
     { day: 'Tuesday', hours: '9am-1pm & 3pm-6pm' },
-    { day: 'Wednesday', hours: 'By appointment only' },
+    { day: 'Wednesday', hours: '10am-12pm & 2pm-4pm' },
     { day: 'Thursday', hours: '3pm-6pm' },
     { day: 'Saturday', hours: '10am-12pm' }
   ];
