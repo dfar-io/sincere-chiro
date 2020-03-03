@@ -33,6 +33,6 @@ jobs:
           --account-name sincerechiroprodsa
           -s ./ui/dist/sincere-chiro-ui
       - name: Purge CDN
-        run: az cdn endpoint purge -g sincerechiro-prod-rg
+        run: az cdn endpoint purge -g sincerechiro-rg
           --profile-name sincerechiro-prod-cdn
           --name sincerechiro-prod-cdnEndpoint --content-paths /
