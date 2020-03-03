@@ -9,7 +9,7 @@ export class BioComponent implements OnInit {
   doctorName: String = 'Dr. Marie-Claude Roy';
   readMoreText: String = 'Read More';
   readLessText: String = 'Read Less';
-  bio: String = 'has been in practice for 12 years. She is currently the ' +
+  bio: String = 'has been in practice for 15 years. She is currently the ' +
     'youngest ever to graduate from Life University in Marietta, Georgia. ' +
     'During her years in practice, Dr. M-C has taken care of patients ' +
     'ranging from newborns (literally, 1 hour old) to 90+ years of age. She ' +
